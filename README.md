@@ -1,28 +1,4 @@
-from turtle import Turtle, Screen
 
-import random
-
-screen = Screen()
-t = Turtle()
-
-
-directions = [0, 90, 180, 270]
-color_list = ["black"]
-
-
-def random_color():
-    r = random.choice(color_list)
-    random_color_p = (r)
-    return random_color_p
-
-t.hideturtle()
-t.pensize(1)
-t.speed("fastest")
-
-for _ in range(10000000):
-    t.color(random_color())
-    t.forward(7)
-    t.setheading(random.choice(directions))
 
 
 
